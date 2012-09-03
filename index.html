@@ -1,0 +1,31 @@
+<title>vanilla-pjax</title>
+
+<style>
+#loader {
+    visibility:hidden;
+    background:url('loader.gif');
+    width:22px; height:22px;
+}
+
+#loader, #container {
+    transition:opacity 0.6s;
+        -webkit-transition:opacity 0.6s;
+        -moz-transition:opacity 0.6s;
+}
+
+a.active {
+    font-weight:bold;
+}
+</style>
+
+<h1>vanilla-pjax</h1>
+
+<ul>
+    <li><a href="foo.html">Foo</a></li>
+    <li><a href="bar.html">Bar</a></li>
+</ul>
+
+<div id="loader"></div>
+<div id="container"></div>
+
+<script src="pjax.js"></script>
